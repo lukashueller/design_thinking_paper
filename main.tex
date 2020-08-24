@@ -1,0 +1,183 @@
+\documentclass[
+	DIV=9,						% Einstellung für den Seitenaufbau (Standardwert)
+	bibliography=totoc, 		% Literaturverzeichnis ins Inhaltsverzeichnis
+	listof=totoc,				% Abbildungs- und Tabellenverzeichnis ins Inhaltsverzeichnis
+	abstract=true,				% Mit Abstract
+	11pt,						% Schriftgröße
+]{scrartcl} 					% scrartcl für kurze Arbeiten (Achtung: es steht kein \chapter zur Verfügung)
+%]{scrreprt} 
+%saubere Zeilenumbrüche in URLs
+\usepackage[hyphens]{url}
+\sloppy
+
+% Euro-Symbol
+\usepackage{eurosym}
+\usepackage{smartdiagram} %für Smart-Art zur SHA
+
+\usepackage[utf8]{inputenc}		% Eingabedaten liegen im UTF8-Format vor
+\usepackage[T1]{fontenc} 		% Ausgabezeichensatz
+\usepackage{lmodern}			% Zeichensätze für die Arbeit
+% -------------------------------------------------------------------------------
+\usepackage[fleqn,				% Mathematische Formeln linksbündig eingerückt
+			%leqno,				% Gleichungsnummerierung links
+			intlimits,			% Integralgrenzen oben und unten
+			]{amsmath}			% Mathematik
+% -------------------------------------------------------------------------------
+\usepackage[ngerman, english]	% Auswahl der Sprachen, für die Layout- und Umbruchregeln bekannt sein sollen
+					{babel}		% Die Sprachen werden mit \selectlanguage{} ausgewählt. Die aktuell Wahl ist ngerman
+
+
+\usepackage{graphicx}			% Einbinden von Grafiken
+								% da die Kompilierung über 'pdflatex' erfolgt, stehen '.jpg', '.png' und '.pdf'
+								% als Grafikformate zur Verfügung
+%\usepackage{textcomp}  %für DollarZeichen
+% Für Beispiel
+\usepackage{blindtext}
+
+
+% Paket aus den KOMA-Klassen für die Einstellungen der Kopf- und Fußzeilen
+% Nachfolger von scrpage2
+% Eine Alternative wäre das Paket 'fancyhdr'
+% Siehe dazu Kapitel 5 im SCRGUIDE
+\usepackage{scrlayer-scrpage}
+\automark{section}			% \automark -> Kapitel 5.5 im SCRGUIDE
+\clearscrheadfoot			% Kopf- und Fußzeilen leeren
+\ohead[]{\headmark}			% \ohead -> Abbildung 5.1 im SCRGUIDE
+                            % \headmark -> Kapitel 5.5 im SCRGUIDE
+% \ihead{\includegraphics[height=\baselineskip]{img/hpi_logo.png}}
+                            % \ihead -> Abbildung 5.1 im SCRGUIDE
+\ofoot[\pagemark]{\pagemark}			% \ofoot -> Abbildung 5.2 im SCRGUIDE
+                            % \pagemark -> Kapitel 5.5 im SCRGUIDE
+\setkomafont{pagehead}{\scshape} % Siehe Beispiel auf Seite 237 im SCRGUIDE
+\addtokomafont{pagehead}{\bfseries} % Befehle \setkomafont und \addtokomafont -> Kapitel 3.6 im SCRGUIDE
+%\addtokomafont{pagehead}{\color{green}} % Befehle \setkomafont und
+% \addtokomafont -> Kapitel 3.6 im SCRGUIDE \addtokomafont{section}{\color{red}} % Befehle \setkomafont und \addtokomafont
+% -> Kapitel 3.6 im SCRGUIDE
+\pagestyle{scrheadings}
+\setlength{\headheight}{24pt}
+\setlength{\footheight}{24pt}
+
+
+% Wasserzeichen auf dem Dokument -----------------------------------------------------------------
+%	Das ist dafür gedacht, dass man Vorabexemplare herausgeben kann, ohne dass sie später
+%	als Originale herumgereicht werden.
+% \usepackage{draftwatermark}							% Wasserzeichen immer in grau
+% \SetWatermarkLightness{.95}							% Grauwert, zwischen 1 (weiß) und 0 (Schwarz)
+% \SetWatermarkAngle{60}								% Winkel, um den das Wasserzeichen gedreht worden ist.
+% \SetWatermarkFontSize{5cm}							% Schriftgröße beim Wasserzeichen (max 5cm)
+% \SetWatermarkScale{.5}								% nachträgliche Skalierung
+% \SetWatermarkText{\sffamily\textbf{Stand: \today}}	% Wasserzeichentext
+
+\usepackage[margin=1in]{geometry} 
+% \usepackage[left=3cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry} 
+\usepackage{xcolor}
+\usepackage[]{todonotes}
+
+% Korrekte Einheitendarstellung -------------------------------------------------------------
+\usepackage[output-decimal-marker={,}, 	% Dezimal-Trennzeichen ist in Deutschland das Komma
+			]{siunitx}
+
+
+\usepackage{array} % einfache Erweiterungen für die Tabellenformatierungen
+% ---------------------------------------------------------------------------------
+% Wenn man unbedingt den Zeilenabstand erhöhen muss, dann über das Paket setspace
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{paralist}%für Aufzählungsumgebungen
+
+%Abbildungen
+\usepackage{caption}
+\usepackage{subcaption}
+
+% Abkürzungverzeichnis
+\usepackage[printonlyused	% nur die Abkürzungen aufführen, die auch verwendet werden
+			]{acronym}
+
+
+\usepackage[citestyle=authoryear,backend=biber,style=authoryear]{biblatex}
+\bibliography{lit.bib}
+
+% Nützliche Pakete
+\usepackage{csquotes}		% Anführungsstriche
+%\usepackage{relsize}		% Wenn man Zwischengrößen in den Schriftgrößen benötigt, bitte die Doku aufmerksam lesen
+%\usepackage{listings}		% Für die Behandlung von Quellcode
+%\usepackage{media9}		% Einbinden von Videos
+%\usepackage{animations}	% Eigene Animationen
+%\usepackage{attachfile2}	% Einbau von Dateien in die pdf-Datei
+%\usepackage{xcolor}		% Damit man mit Farben umgehen kann, wird aber von vielen Paketen mit geladen (z.B. hyperref)
+\usepackage{makeidx}\makeindex % Für ein Stichwortverzeichnis (es gibt auch eine Alternative namens xindy - glaube ich)
+%\usepackage{titlesec}
+%\makeatletter
+%\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+%	{-2.5ex\@plus -1ex \@minus -.25ex}%
+%	{1.25ex \@plus .25ex}%
+%	{\normalfont\normalsize\bfseries}}
+%\makeatother
+\setcounter{secnumdepth}{3} % how many sectioning levels to assign numbers to
+\setcounter{tocdepth}{3}    % how many sectioning levels to show in ToC
+% für paragraph als subsubsubsection
+% Für sehr interessierte und engagierte Leute ;)
+\usepackage{tikz}			% Grafiken mit LaTeX - extrem mächtig und schön (Alternative wäre psstricks)
+\usetikzlibrary{arrows,shapes,positioning,shadows,trees}
+\usetikzlibrary{shadings}
+\usepackage{smartdiagram} %smart art diagramme
+\usepackage{adjustbox}
+\usepackage[final]{pdfpages} %für includepdf
+%\usetikzlibrary{shapes,snakes}
+%\tikzstyle{every node}=[draw=black,thin,anchor=west, minimum height=2.5em]
+% \usepackage{pgfplots}		% setzt auf TikZ auf (lädt es also) und ist speziel für die Datenvisualisierung
+% \usepackage{ifthen}		% (La)TeX bietet schon selber if-then-Möglichkeiten, durch das Paket werden sie angenehmer im Handling
+% \usepackage{forloop}		% auch Schleifen sind möglich
+
+% Laut Dokumentation sollte diese Paket als Letztes eingebunden werden.
+\usepackage[hidelinks,						% Links im pdf-Dokument nicht farblich hervorheben (gilt nur für die Darstellung auf dem Bildschirm)
+			pdfauthor={Tobias Wuttke}, % Schreibt den Autor in die PDF-Datei
+			]{hyperref}
+
+\newcounter{speichereRoemischeZahl}
+\def\mytitle{The effects of prototyping and Lego Serious Play in leadership seminars} 
+
+\usepackage{graphicx}
+\usepackage{lscape}
+
+% %Komma zwischen Fußnoten, gibt leider eine Warnung
+% \usepackage[multiple]{footmisc}
+
+%Seiten im Querformat (große Tabellen die es vermutlich gibt)
+%\usepackage{pdflscape}
+ 
+%Tabellen skalieren
+%\usepackage{tabularx}
+%\usepackage{tabu} %rowfont 
+%\usepackage{longtable} %endhead
+ 
+\newlength{\drop}
+
+\usepackage{setspace}
+\doublespacing
+
+\begin{document}
+    %\listoftodos
+	\pagestyle{plain}
+	\include{content/deckblatt}
+    \include{content/0-abstract}
+	\pagestyle{scrheadings} 
+	\pagenumbering{Roman}
+	\tableofcontents
+	\newpage
+	\setcounter{speichereRoemischeZahl}{\value{page}}
+	\pagenumbering{arabic}
+	\input{content/1-motivation}\newpage
+	\input{content/2-status-quo}\newpage
+	\input{content/3-implementation}\newpage
+	\input{content/4-discussion}
+	\newpage
+	\singlespacing
+	\pagenumbering{Roman}
+	\setcounter{page}{\value{speichereRoemischeZahl}}
+	\printbibliography[title={References}]
+	\doublespacing
+	\include{content/anhang}
+
+\end{document}

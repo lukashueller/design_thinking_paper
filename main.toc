@@ -1,0 +1,12 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Motivation}{1}{section.1}%
+\contentsline {section}{\numberline {2}Prototyping \& LSP: Status Quo}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}What Is Prototyping \& LSP?}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Where Is LSP Applied?}{2}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Implementation of LSP in Wayfinder Seminar}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Recap: How was LSP applied in WAYFINDER?}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Relation to WAYFINDER}{3}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Integration into WAYFINDER}{3}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Discussion}{4}{section.4}%
+\contentsline {section}{\numberline {A}Appendix}{II}{appendix.A}%
