@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.29)  23 AUG 2020 10:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.29)  27 AUG 2020 16:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1313,15 +1313,26 @@ LaTeX Font Warning: Font shape `T1/lmr/bx/scsl' undefined
 <to be read again> 
                    \relax 
 l.171 	\input{content/1-motivation}\newpage
-                                            [1] (/Users/lukashueller/OneDrive/04_HPI/Lektionen/Wayfinder/Paper/content/2-status-quo.tex) [2] (/Users/lukashueller/OneDrive/04_HPI/Lektionen/Wayfinder/Paper/content/3-implementation.tex) [3] (/Users/lukashueller/OneDrive/04_HPI/Lektionen/Wayfinder/Paper/content/4-discussion.tex) [4]
+                                            [1] (/Users/lukashueller/OneDrive/04_HPI/Lektionen/Wayfinder/Paper/content/2-status-quo.tex
+Underfull \hbox (badness 10000) in paragraph at lines 15--17
+
+ []
+
+[2] [3]) [4] (/Users/lukashueller/OneDrive/04_HPI/Lektionen/Wayfinder/Paper/content/3-implementation.tex) [5] (/Users/lukashueller/OneDrive/04_HPI/Lektionen/Wayfinder/Paper/content/4-discussion.tex) [6]
 
 LaTeX Warning: Empty bibliography on input line 179.
 
 \openout2 = `content/anhang.aux'.
 
-(/Users/lukashueller/OneDrive/04_HPI/Lektionen/Wayfinder/Paper/content/anhang.tex) [2
+(/Users/lukashueller/OneDrive/04_HPI/Lektionen/Wayfinder/Paper/content/anhang.tex
+<img/DT_process.png, id=103, 185.69376pt x 56.71187pt>
+File: img/DT_process.png Graphic file (type png)
+<use img/DT_process.png>
+Package pdftex.def Info: img/DT_process.png  used on input line 14.
+(pdftex.def)             Requested size: 452.96796pt x 138.34297pt.
+) [2
 
-]
+ </Users/lukashueller/OneDrive/04_HPI/Lektionen/Wayfinder/Paper/img/DT_process.png (PNG copy)>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 183.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 183.
  (/Users/lukashueller/OneDrive/04_HPI/Lektionen/Wayfinder/Paper/main.aux (/Users/lukashueller/OneDrive/04_HPI/Lektionen/Wayfinder/Paper/content/deckblatt.aux) (/Users/lukashueller/OneDrive/04_HPI/Lektionen/Wayfinder/Paper/content/0-abstract.aux) (/Users/lukashueller/OneDrive/04_HPI/Lektionen/Wayfinder/Paper/content/anhang.aux))
@@ -1338,18 +1349,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39271 strings out of 480608
- 833720 string characters out of 5903630
- 1663490 words of memory out of 5000000
- 54404 multiletter control sequences out of 15000+600000
+ 39289 strings out of 480608
+ 834019 string characters out of 5903630
+ 1665491 words of memory out of 5000000
+ 54419 multiletter control sequences out of 15000+600000
  596601 words of font info for 57 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  73i,19n,106p,10186b,2281s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on /Users/lukashueller/OneDrive/04_HPI/Lektionen/Wayfinder/Paper/main.pdf (8 pages, 324660 bytes).
+Output written on /Users/lukashueller/OneDrive/04_HPI/Lektionen/Wayfinder/Paper/main.pdf (10 pages, 413850 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
- 22 named destinations out of 1000 (max. 500000)
- 206 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 168 PDF objects out of 1000 (max. 8388607)
+ 129 compressed objects within 2 object streams
+ 23 named destinations out of 1000 (max. 500000)
+ 219 words of extra memory for PDF output out of 10000 (max. 10000000)
 
